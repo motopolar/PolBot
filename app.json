@@ -1,9 +1,9 @@
 {
-  "name": "HADES-BOT-OMEGA",
-  "website": "https://youtube.com/@hades_bot2391",
-  "description": "Super Bot WhatsApp",
-  "repository": "https://github.com/OFC-YOVANI/HADES-BOT-OMEGA.git",
-  "logo": "https://i.imgur.com/AmzlKVi.jpeg",
+  "name": "PolBot",
+  "website": "https://youtube.com/@rosalia1",
+  "description": "PolBot by Polar",
+  "repository": "https://github.com/motopolar/PolBot.git",
+  "logo": "https://imgur.com/hHcSOWh",
   "success_url": "",
   "keywords": [
     "nodejs",
