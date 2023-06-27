@@ -4,9 +4,9 @@ import ytdl from 'ytdl-core'
 import axios from 'axios'
 import { youtubedl, youtubedlv2, youtubedlv3 } from '@bochilteam/scraper'
 let handler = async (m, { conn, command, args, text, usedPrefix }) => {
-if (!text) throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙽𝙾𝙼𝙱𝚁𝙴 𝙳𝙴 𝙻𝙰 𝙲𝙰𝙽𝙲𝙸𝙾𝙽 𝙵𝙰𝙻𝚃𝙰𝙽𝚃𝙴, 𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁 𝙸𝙽𝙶𝚁𝙴𝚂𝙴 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝙼𝙰𝚂 𝙴𝙻 𝙽𝙾𝙼𝙱𝚁𝙴/𝚃𝙸𝚃𝚄𝙻𝙾 𝙳𝙴 𝚄𝙽𝙰 𝙲𝙰𝙽𝙲𝙸𝙾𝙽*\n\n*—◉ 𝙴𝙹𝙴𝙼𝙿𝙻𝙾:*\n*${usedPrefix + command} Farruko beba*\n\n\n*[❗𝐈𝐍𝐅𝐎❗]MISSING SONG NAME PLEASE ENTER COMMAND PLUS SONG NAME*\n\n*—◉ AN EXAMPLE*\n*${usedPrefix + command} Farruko beba* `
+if (!text) throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙽𝙾𝙼𝙱𝚁𝙴 𝙳𝙴 𝙻𝙰 𝙲𝙰𝙽𝙲𝙸𝙾𝙽 𝙵𝙰𝙻𝚃𝙰𝙽𝚃𝙴, 𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁 𝙸𝙽𝙶𝚁𝙴𝚂𝙴 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝙼𝙰𝚂 𝙴𝙻 𝙽𝙾𝙼𝙱𝚁𝙴/𝚃𝙸𝚃𝚄𝙻𝙾 𝙳𝙴 𝚄𝙽𝙰 𝙲𝙰𝙽𝙲𝙸𝙾𝙽*\n\n*—◉ 𝙴𝙹𝙴𝙼𝙿𝙻𝙾:*\n*${usedPrefix + command} Rosalía Tuya* `
 try {
-await m.reply(`*_⏳ESPERA MIENTRAS LE MANDAMOS SU PEDIDO⏳*\n\n*_⏳WAIT WHILE WE SEND YOUR ORDER*_⏳`)
+await m.reply(`*_⏳ESPERA MIENTRAS LE MANDAMOS SU PEDIDO⏳*`)
 await m.reply(`⌛ _Cargando..._\n▰▰▰▱▱▱▱▱▱`)
 const yt_play = await search(args.join(" "))
 let additionalText = ''
@@ -22,7 +22,7 @@ let texto1 = ` ༴⃟🌹๋ོ࣭ꦿ⁩PLAY-YouTube--⦿
 ➯➤⌚ *Duration:* ${secondString(yt_play[0].duration.seconds)}
 ➯➤👀 *Views:* ${`${MilesNumber(yt_play[0].views)}`}
 ➯➤🔗 *Link:* ${yt_play[0].url}
-▢⫷᭄©𝙷𝙰𝙳𝙴𝚂-𝙱𝙾𝚃-𝙾𝙼𝙴𝙶𝙰﹏✍
+PolBot ✍
 ----------------------------------------------------------------------------------------------------------`.trim()
 conn.sendMessage(m.chat, { image: { url: yt_play[0].thumbnail }, caption: texto1 }, { quoted: m })
 if (command == 'play') {
