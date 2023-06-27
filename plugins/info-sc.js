@@ -12,13 +12,13 @@ let buttonMessage= {
 'forwardingScore': 200,
 'isForwarded': true,
 'externalAdReply': {
-'mediaUrl': 'https://github.com/OFC-YOVANI/HADES-BOT-OMEGA.git',
+'mediaUrl': 'https://github.com/motopolar/PolBot.git',
 'mediaType': 2,
 'previewType': 'pdf',
 'title': 'ᴇʟ ᴍᴇᴊᴏʀ ʙᴏᴛ ᴅᴇ ᴡʜᴀᴛsᴀᴘᴘ⁩',
 'body': wm,
 'thumbnail': imagen1,
-'sourceUrl': 'https://youtu.be/4eA5nDxPjOA' }},
+'sourceUrl': 'https://youtu.be/@rosalia' }},
 'caption': text,
 'footer': wm,
 //'buttons':[
