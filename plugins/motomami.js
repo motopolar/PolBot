@@ -34,4 +34,5 @@ global.motomami = [
   "🦋 Una motomami no sabe cuando rendirse*",
   "🦋 Una motomami nunca llega tarde, son los demás que llegan muy temprano*"
   "🦋 Una motomami de 10 es un 100*"
+  "🦋 Yo soy muy mía, pero hoy soy tuya.*"
 ];
