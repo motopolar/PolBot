@@ -9,7 +9,7 @@ try {
 let q = m.quoted ? m.quoted : m
 let mime = (q.msg || q).mimetype || q.mediaType || ''
 if (/webp|image|video/g.test(mime)) {
-if (/video/g.test(mime)) if ((q.msg || q).seconds > 8) return m.reply('*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝙻 𝚅𝙸𝙳𝙴𝙾 𝙽𝙾 𝙿𝚄𝙴𝙳𝙴 𝙳𝚄𝚁𝙰𝚁 𝙼𝙰𝚂 𝙳𝙴 𝟽 𝚂𝙴𝙶𝚄𝙽𝙳𝙾𝚂*\n\n\n*[❗𝐈𝐍𝐅𝐎❗]THE VIDEO CANNOT BE LONGER THAN 7 SECONDS*')
+if (/video/g.test(mime)) if ((q.msg || q).seconds > 8) return m.reply('Ey, el vídeo dura demasiado. Menos de siete segundos está bien.')
 let img = await q.download?.()
 
 if (!img) throw `*[❗𝐈𝐍𝐅𝐎❗] 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴 𝙰 𝚄𝙽 𝚅𝙸𝙳𝙴𝙾, 𝙸𝙼𝙰𝙶𝙴𝙽 𝙾 𝙸𝙽𝚂𝙴𝚁𝚃𝙴 𝙴𝙻 𝙴𝙽𝙻𝙰𝙲𝙴 𝙳𝙴 𝚄𝙽𝙰 𝙸𝙼𝙰𝙶𝙴𝙽 𝚃𝙴𝚁𝙼𝙸𝙽𝙰𝙲𝙸𝙾́𝙽 .𝚓𝚙𝚐 𝙴𝙻 𝙲𝚄𝙰𝙻 𝚂𝙴𝚁𝙰 𝙲𝙾𝙽𝚅𝙴𝚁𝚃𝙸𝙳𝙾 𝙴𝙽 𝚂𝚃𝙸𝙲𝙺𝙴𝚁, 𝙳𝙴𝙱𝙴 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴𝚁 𝙾 𝚄𝚂𝙰𝚁 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 ${usedPrefix + command}*\n\n\n*[❗𝐈𝐍𝐅𝐎❗] REPLY TO A VIDEO, OR IMAGE OF THE LINK OF AN IMAGE ENDING .jpg IN WHICH IT WILL BE CONVERTED INTO STICKERS, YOU MUST RESPOND USING THE COMMAND ${usedPrefix + command}*`
