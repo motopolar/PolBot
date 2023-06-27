@@ -6,7 +6,7 @@ const owner = groupMetadata.owner || groupAdmins.find(p => p.admin === 'superadm
 let pesan = args.join` `
 let oi = `*𝙼𝙴𝙽𝚂𝙰𝙹𝙴:* ${pesan}`
 let text = `----------------------------------------------------------------------------------------------------------
-➯𝐈𝐍𝐕𝐎𝐂𝐀𝐍𝐃𝐎 𝐀𝐃𝐌𝐈𝐍𝐒 
+➯Estoy llamando a los administradores del grupo en este momento.
 ➯${oi}
 ➯*𝙰𝙳𝙼𝙸𝙽𝚂:*
 ➯${listAdmin}
