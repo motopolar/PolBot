@@ -2,7 +2,7 @@ let handler = async (m, { conn, text }) => {
   m.reply(`*${pickRandom(global.motomami)}`);
 };
 
-handler.tags = ['rosalia'];
+handler.tags = ['motomami'];
 handler.command = ['motomami'];
 
 export default handler;
