@@ -14,7 +14,7 @@ let prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: t
 await conn.relayMessage(m.chat, prep.message, { messageId: prep.key.id, mentions: [m.sender] })    
 const dataF = await tiktok.v1(args[0])
 //let desc1 =  `*𝙽𝙸𝙲𝙺𝙽𝙰𝙼𝙴:* ${dataF.nickname || 'Indefinido'}`
-let desc1 =  `*¡Hola! 🌟*\n*📽️ Aquí tienes tu video de TikTok.*\n\n*Recuerda que si deseas convertir el video en audio, puedes hacerlo fácilmente respondiendo al video con el comando #tomp3 🎧.*\n\n\n*Hello! 🌟*\n*📽️ Here's your TikTok video.*\n\n*Remember that if you want to convert the video to audio, you can easily do so by replying to the video with the #tomp3 command 🎧.*`
+let desc1 =  `*¡Hecho! Y le marca quité la marca de agua. 😉*`
 await conn.sendMessage(m.chat, { video: { url: dataF.play }, caption: desc1 }, { quoted: m })  
 } catch (e1) {
 try {
