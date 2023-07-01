@@ -7,5 +7,4 @@ ${Object.entries(global.db.data.sticker).map(([key, value], index) => `*${index 
 }
 handler.command = ['listcmd', 'cmdlist']
 handler.rowner = true
-handler.register = true
 export default handler
