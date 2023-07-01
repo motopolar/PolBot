@@ -23,5 +23,4 @@ await conn.reply(m.chat, '*[❗] 𝙴𝚁𝚁𝙾𝚁 𝙽𝙾 𝙵𝚄𝙴 𝙿
 }}
 handler.command = /^ytmp3doc|ytadoc|ytmp3.2|yta.2$/i
 handler.limit = 4
-handler.register = true
 export default handler
