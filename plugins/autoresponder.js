@@ -10,5 +10,4 @@ this.sendFile(m.chat, stiker, 'sticker.webp', null, m, false, {
 contextInfo: { externalAdReply: { title: 'PolBot✍', body: 'PolBot✍', sourceUrl: `https://instagram.com/rosalia.vt`, thumbnail: imagen2}}})}
     
 return !0 }
-handler.register = true
 export default handler
