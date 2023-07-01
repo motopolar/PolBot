@@ -46,7 +46,6 @@ function handler(m, { groupMetadata, command, conn, text, usedPrefix }) {
 
 handler.help = handler.command = ['top'];
 handler.tags = ['fun'];
-handler.register = true;
 handler.group = true;
 
 export default handler;
