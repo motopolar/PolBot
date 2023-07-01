@@ -4,7 +4,6 @@ m.reply(`*╔══════════════════════�
 }
 handler.tags = ['frases']
 handler.command = ['piropo']
-handler.register = true
 export default handler
 
 function pickRandom(list) {
