@@ -4,7 +4,7 @@ import ytdl from 'ytdl-core'
 import axios from 'axios'
 import { youtubedl, youtubedlv2, youtubedlv3 } from '@bochilteam/scraper'
 let handler = async (m, { conn, command, args, text, usedPrefix }) => {
-if (!text) throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙽𝙾𝙼𝙱𝚁𝙴 𝙳𝙴 𝙻𝙰 𝙲𝙰𝙽𝙲𝙸𝙾𝙽 𝙵𝙰𝙻𝚃𝙰𝙽𝚃𝙴, 𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁 𝙸𝙽𝙶𝚁𝙴𝚂𝙴 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝙼𝙰𝚂 𝙴𝙻 𝙽𝙾𝙼𝙱𝚁𝙴/𝚃𝙸𝚃𝚄𝙻𝙾 𝙳𝙴 𝚄𝙽𝙰 𝙲𝙰𝙽𝙲𝙸𝙾𝙽*\n\n*—◉ 𝙴𝙹𝙴𝙼𝙿𝙻𝙾:*\n*${usedPrefix + command} Rosalía Tuya* `
+if (!text) throw `*Escribe el comando junto al nombre del artista y la canción, por ejemlo:*${usedPrefix + command} Rosalía Tuya* `
 try {
 await m.reply(`*_⏳ESPERA MIENTRAS LE MANDAMOS SU PEDIDO⏳*`)
 await m.reply(`⌛ _Cargando..._\n▰▰▰▱▱▱▱▱▱`)
@@ -81,7 +81,6 @@ throw "*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝚁𝚁𝙾𝚁, 𝙿𝙾𝚁 𝙵𝙰𝚅
 handler.help = ["play", "play2"].map((v) => v + " < busqueda >")
 handler.tags = ["downloader"]
 handler.command = /^play2?$/i
-handler.register = true
 handler.limit = 4
 export default handler
 
