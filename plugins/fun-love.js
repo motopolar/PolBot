@@ -5,5 +5,4 @@ m.reply(love, null, { mentions: conn.parseMention(love) })}
 handler.help = ['love']
 handler.tags = ['fun']
 handler.command = /^(love)$/i
-handler.register = true
 export default handler
